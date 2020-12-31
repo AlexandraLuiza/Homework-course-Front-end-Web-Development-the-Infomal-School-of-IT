@@ -1,0 +1,29 @@
+<!--Disable/enable the form submit button. Disable the submit button until the visitor has clicked a check box.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<input id="accept" name="accept" type="checkbox" value="y" />I accept
+<input id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit" />
+
+</body>
+<script>
+    $(document).ready(function () {
+        $('#accept').click(function () {
+            if ($('#submitbtn').is(':disabled')) {
+                $('#submitbtn').removeAttr('disabled');
+            } else {
+                $('#submitbtn').attr('disabled', 'disabled');
+            }
+        })
+    });
+</script>
+
+</html>

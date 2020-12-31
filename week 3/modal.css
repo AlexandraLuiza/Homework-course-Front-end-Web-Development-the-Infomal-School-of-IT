@@ -1,0 +1,28 @@
+.name{
+    font-weight: bold;
+}
+.form-input {
+    color: lightgray;
+}
+
+.submit{
+    color:white;
+    border: 8px;
+    background-color: #8A2BE2;
+}
+
+.submit:hover{
+    background-color: #9400D3;
+}
+
+.close-btn{
+    color: 	#8A2BE2;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    background-color: white;
+    border:none;
+}
+
+.close-btn:hover{
+    background-color: #9400D3;
+}

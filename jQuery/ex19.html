@@ -1,0 +1,25 @@
+<!-- Remove style added with .css() function using jQuery.  -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Check if internet connection is working</title>
+</head>
+
+<body style="font-family: sans-serif">
+    <h1 id="MyInput" style="margin:10px 0; padding: 0 5px; font-size:2em; border: 2px double green">jQuery Exercises
+    </h1>
+
+    <input type="button" value="Remove border style" onClick="remove_style()" />
+</body>
+<script>
+    function remove_style() {
+        $('#MyInput').css("border", "0");
+    }
+</script>
+
+</html>

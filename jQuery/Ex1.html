@@ -1,0 +1,24 @@
+<!-- 1. Test if jQuery is loaded. (https://www.w3resource.com/jquery-exercises/part1/index.php)-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>First problem</title>
+</head>
+
+<body>
+    <h1>Homework</h1>
+    <button>I'm here!</button>
+</body>
+<script>
+    $(document).ready(function () {
+        $('button').click(function () {
+            $(this).slideUp()
+        });
+    });
+</script>
+
+</html>

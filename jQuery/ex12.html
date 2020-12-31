@@ -1,0 +1,36 @@
+<!-- Move one DIV element inside another using jQuery. (de revizuit!!!!!!!!!!!) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="source">
+        <button id="btnDefault" onclick="moveButton(this)" type="button">Button1</button>
+        <button id="btnPrimary" onclick="moveButton(this)" type="button">Button2</button>
+        <button id="btnDanger" onclick="moveButton(this)" type="button">Button3</button>
+    </div>
+
+    <div id="destination">
+    </div>
+
+</body>
+<script>
+    function moveButton(elem) {
+        if ($(elem).parent().attr("id") == "source") {
+            $(elem).detach().appendTo('#destination');
+        } else {
+            $(elem).detach().appendTo('#source');
+        }
+    }
+</script>
+
+</html>

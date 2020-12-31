@@ -1,0 +1,110 @@
+
+.navi-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+}
+
+.navi-item {
+    background-color: navy;
+    padding: 2em 4em;
+    color: white;
+}
+
+.navi-item a {
+    color:white;
+}
+
+h2, p{
+    display: inline-block;
+    
+}
+
+.vl{
+    display: inline-block;
+    border-left: 3px solid lightgray;
+    height: 30px;
+    position: left;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 10px;
+}
+
+.card-container {
+    overflow: hidden;
+    position: relative;
+    background-color: lightskyblue;
+}
+.img-tech{    
+    transform: skewY(-20deg);
+    align-items: center;   
+}
+.first-prg{
+    width:350px;
+    background-color: navy;
+    color: white;
+    position: relative;
+    top: -600px;
+    left: 40px;
+}
+.todays-technology {
+    background-color: blue;
+    padding: .5em .5em;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+    top: -270px;
+    right: -590px;
+    width: 450px;
+}
+.todays-technology a {
+    color: white;
+}
+
+span{
+    display: block;
+    float: right;
+}
+
+.first-deck-card{
+    background-color: lightgray;
+    color:grey;
+}
+
+.categories{
+    background-color: lightgray;
+}
+
+.categories h4{
+    margin-top: 1em;
+}
+.categories a{
+  padding: 0px;
+}
+
+.img-second-grid{
+    width:174px;
+    height: 100px;
+}
+
+
+.bottom-images {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+.thumbnail {
+    width: 174px;
+    height: 100px;
+}
+
+.footer-block {
+    background-color: navy;
+    color: white;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 1em;
+}

@@ -1,0 +1,28 @@
+<!-- Add a list elements within an unordered list element. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="list">
+        <ul>
+            <li>apple</li>
+            <li>pear</li>
+            <li>strawberries</li>
+        </ul>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#list ul").append('<li>peach</li>');
+    });
+</script>
+
+</html>

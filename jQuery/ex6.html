@@ -1,0 +1,31 @@
+<!-- Blink text using jQuery. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <p style="font-size:x-large">This is a <span class="blink"> simple </span> test.</p>
+</body>
+<script>
+    function blink_text() {
+        $('.blink').fadeOut(500);
+        $('.blink').fadeIn(500);
+    }
+    setInterval(blink_text, 1000);
+</script>
+
+</html>
+
+
+<!-- <script> 
+    $(document).ready(function () {
+        $('.blink').fadeIn(800).fadeOut(800);
+    }, 1000);
+</script>-->

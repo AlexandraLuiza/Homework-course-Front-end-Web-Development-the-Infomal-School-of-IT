@@ -1,0 +1,47 @@
+<!-- Underline all the words of a text using jQuery De revizuit!!!!!!!!!!!!!!!!!1-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Mauris fringilla
+        dui et purus consectetur vehicula
+        tristique ac urna. Quisque eu dui non arcu elementum consequat et a metus. Nunc nec nibh nec mi imperdiet
+        rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec quis
+        placerat tellus. Sed quis leo tempus augue mollis eleifend sit amet nec justo. Morbi sit amet est eu felis
+        commodo faucibus sed sed magna. Sed pretium consectetur dui, ut varius erat. Aenean rutrum arcu ut quam
+        accumsan, at sagittis ipsum tempus. Curabitur aliquet nibh ut tempus maximus. Cras ultrices, eros ac semper
+        sollicitudin, massa arcu pretium leo, a ornare elit augue porta elit. Integer convallis arcu mi, eu
+        facilisis
+        massa blandit ut. Duis aliquam placerat semper.
+    </p>
+</body>
+<script>
+    $('p').each(function () {
+
+        var text_words = $(this).text().split(' ');
+
+        $(this).empty().html(function () {
+
+            for (i = 0; i < text_words.length; i++) {
+                if (i === 0) {
+                    $(this).append('<p>' + text_words[i] + '</p>');
+                } else {
+                    $(this).append(' <p>' + text_words[i] + '</p>');
+                }
+            }
+
+        });
+
+    });
+</script>
+
+</html>

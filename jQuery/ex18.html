@@ -1,0 +1,26 @@
+<!-- Remove all CSS classes using jQuery.  -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="ex18.css">
+    </link>
+    <title>Remove all CSS classes using jQuery</title>
+</head>
+
+<body>
+    <p id="item" class="center large">This paragraph refers two classes.</p>
+
+    <input type="button" value="Click to remove all classes" onclick="remove_classes()" />
+</body>
+<script>
+    function remove_classes() {
+        $("#item").removeClass();
+    }
+</script>
+
+</html>

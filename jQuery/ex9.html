@@ -1,0 +1,26 @@
+<!-- Limit character input in the textarea including count. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <p style="font-size:large">Maximum 15 characters</p>
+    <textarea id="textarea" maxlength="15"></textarea>
+    <span id="rchars">15</span> Character(s) Remaining
+</body>
+<script>
+    var maxLength = 15;
+    $('textarea').keyup(function () {
+        var textlen = maxLength - $(this).val().length;
+        $('#rchars').text(textlen);
+    });
+</script>
+
+</html>

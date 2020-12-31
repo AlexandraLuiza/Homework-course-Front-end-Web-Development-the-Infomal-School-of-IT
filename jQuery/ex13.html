@@ -1,0 +1,29 @@
+<!-- Select values from a JSON object using jQuery. NOT WORKING OR I DON'T UNDERSTAND IT-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myObj"> </div>
+    colors = { "color1": "Red", "color2": "Green", 'color3': "Blue" };
+
+</body>
+<script>
+    $(document).ready(function () {
+        $.each(colors, function (key, value) {
+            $('#myObj').append($("<option/>", {
+                value: key,
+                text: value
+            }));
+        });
+    });
+</script>
+
+</html>

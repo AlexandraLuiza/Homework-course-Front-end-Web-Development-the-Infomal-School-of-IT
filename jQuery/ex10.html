@@ -1,0 +1,31 @@
+<!-- Make first word bold of all elements. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $('p').each(function (index, element) {
+            var text = $(element).text();
+            var words = text.split(' ');
+            words[0] = '<strong>' + words[0] + '</strong>';
+            $(element).html(words.join(' '));
+        });
+    });
+</script>
+
+</html>
